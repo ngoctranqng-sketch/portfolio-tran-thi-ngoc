@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tran Thi Ngoc — Portfolio</title>
+<title>Tran Thi Ngoc — Marketing Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -180,6 +180,7 @@
     background: var(--teal-pale); border-radius: 12px; z-index: 0;
   }
   .about-photo { width: 100%; height: auto; position: relative; z-index: 1; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); }
+  
   .about-avatar-fallback {
     width: 100%; aspect-ratio: 3/4; position: relative; z-index: 1; border-radius: 12px;
     background: linear-gradient(135deg, var(--dark) 0%, var(--dark-mid) 100%);
@@ -223,7 +224,7 @@
   .tl-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
   .tag { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 6px 14px; border: 1px solid rgba(201,168,76,0.3); color: var(--silver); border-radius: 4px; background: rgba(255,255,255,0.02); }
 
-  /* ── PROJECTS ── */
+  /* ── PROJECTS (6 ITEMS GRID) ── */
   #projects { background: var(--silver-light); }
   #projects .section-title { margin-bottom: 60px; }
   .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 40px; }
@@ -246,7 +247,14 @@
     position: relative; 
   }
   .project-number { position: absolute; top: 24px; right: 32px; font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 900; color: var(--gold-pale); line-height: 1; opacity: 0.5; }
-  .project-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--dark); margin-bottom: 8px; padding-right: 40px; }
+  .project-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: var(--dark); margin-bottom: 4px; padding-right: 40px; }
+  
+  /* Lệnh hiển thị ROLE siêu đẹp */
+  .project-role { 
+    font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; 
+    color: var(--teal-dark); margin-bottom: 24px; padding-bottom: 12px; 
+    border-bottom: 1px dashed var(--silver-light); 
+  }
   
   /* CHALLENGE BOX (INSIGHT) */
   .project-insight {
@@ -272,7 +280,7 @@
   /* RESULTS */
   .project-results-wrapper { margin-top: auto; } /* Luôn bám đáy */
   .project-results-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); margin-bottom: 12px; }
-  .result-pill-container { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .result-pill-container { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; min-height: 68px; }
   .result-pill { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; padding: 6px 12px; background: var(--teal-pale); color: var(--teal-dark); border-radius: 4px; }
   
   .project-link { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--dark); text-decoration: none; transition: all 0.3s; align-self: flex-start; }
@@ -587,6 +595,7 @@
       <div class="project-body">
         <div class="project-number">01</div>
         <div class="project-name">IT Market Report 2023–2024</div>
+        <div class="project-role">Content Lead · Campaign Execution</div>
         
         <div class="project-insight">
           <div class="project-insight-label">🎯 The Challenge</div>
@@ -615,11 +624,12 @@
 
     <div class="project-card fade-in">
       <div class="project-header-img-wrapper">
-        <img src="to-tuong-chuyen-nganh-1" alt="To Tuong Chuyen Nganh" class="project-header-img" onerror="this.parentElement.style.background='linear-gradient(135deg,#1A1A2E,#2D2D44)'; this.style.display='none';">
+        <img src="to-tuong-chuyen-nganh-1.png" alt="To Tuong Chuyen Nganh" class="project-header-img" onerror="this.parentElement.style.background='linear-gradient(135deg,#1A1A2E,#2D2D44)'; this.style.display='none';">
       </div>
       <div class="project-body">
         <div class="project-number">02</div>
         <div class="project-name">"Tỏ Tường Chuyện Ngành" Series</div>
+        <div class="project-role">Series Creator · Interviewer</div>
         
         <div class="project-insight">
           <div class="project-insight-label">🎯 The Challenge</div>
@@ -653,6 +663,7 @@
       <div class="project-body">
         <div class="project-number">03</div>
         <div class="project-name">Talkshow "1 Tách Codefee"</div>
+        <div class="project-role">Content Strategist · Producer</div>
         
         <div class="project-insight">
           <div class="project-insight-label">🎯 The Challenge</div>
@@ -686,6 +697,7 @@
       <div class="project-body">
         <div class="project-number">04</div>
         <div class="project-name">B2B Partner Communications</div>
+        <div class="project-role">Cross-team Lead</div>
         
         <div class="project-insight">
           <div class="project-insight-label">🎯 The Challenge</div>
@@ -695,11 +707,10 @@
         <div class="project-tasks">
           <div class="project-tasks-title">Execution</div>
           <ul>
-            <li><strong>NAB Innovation Centre (Oct 2023):</strong> Planned and executed event communications across social and email; drafted the keynote speech delivered by the brand representative at the event.</li>
-            <li><strong>FPT University Job Fair (Nov 2023):</strong> Executed social media communications; supported event team on-site at FPTU Job Fair 2023.</li>
-            <li><strong>BKACAD (Nov–Dec 2023):</strong> Managed communications for 2 online workshops — "Explore The Power Of AI: Career Trends in AI Industry" and "Career Opportunities in the Game Industry".</li>
-            <li><strong>LIKELION — K-Tech College Job Fair 2024:</strong> Led social and email communications; supported team at event.</li>
-            <li><strong>Google Developer Hanoi — Google I/O Extended 2024:</strong> Executed social and email communications for event promotion.</li>
+            <li><strong>NAB Innovation Centre:</strong> Executed comms; drafted brand keynote speech; processed contracts.</li>
+            <li><strong>FPT University Job Fair:</strong> Executed social media comms; provided on-site event support.</li>
+            <li><strong>BKACAD:</strong> Managed comms for 2 online workshops (AI & Game Industry trends).</li>
+            <li><strong>LIKELION & Google Developer:</strong> Led social/email promos for K-Tech Job Fair and Google I/O Extended.</li>
           </ul>
         </div>
         
@@ -709,6 +720,7 @@
             <span class="result-pill">Zero Comm Errors</span>
             <span class="result-pill">5+ Major Brand Partners</span>
           </div>
+          <a href="#" class="project-link">View Project</a>
         </div>
       </div>
     </div>
@@ -720,6 +732,7 @@
       <div class="project-body">
         <div class="project-number">05</div>
         <div class="project-name">Google Empower Growth 2023</div>
+        <div class="project-role">Campaign Planner · Executor</div>
         
         <div class="project-insight">
           <div class="project-insight-label">🎯 The Challenge</div>
@@ -729,7 +742,7 @@
         <div class="project-tasks">
           <div class="project-tasks-title">Execution</div>
           <ul>
-            <li>Developed full communication plan; created content for scholarship program, 3 Career Talk webinars, office tours, and internship program.</li>
+            <li>Executed & suported develop communication plan; created content for scholarship program, 3 Career Talk webinars, office tours, and internship program.</li>
             <li>Wrote sales brochure for the Employer branding team.</li>
             <li>Supported event coordination on-site at the Career Fair.</li>
           </ul>
@@ -753,6 +766,7 @@
       <div class="project-body">
         <div class="project-number">06</div>
         <div class="project-name">Texas Real Estate Pipeline</div>
+        <div class="project-role">Content Writer · Video Editor</div>
         
         <div class="project-insight">
           <div class="project-insight-label">🎯 The Challenge</div>
@@ -762,9 +776,9 @@
         <div class="project-tasks">
           <div class="project-tasks-title">Execution</div>
           <ul>
-            <li>Researched Texas property market and HAR MLS listings weekly to identify property USPs; built and maintained editorial content calendar across Facebook and YouTube.</li>
-            <li>Wrote SEO-optimized listing captions and YouTube video titles/descriptions; edited long-form Home Tour videos into short-form Reels.</li>
-            <li>Set up QA process for all video assets — verified 100% accuracy on property specs, pricing, and brand tone before publishing.</li>
+            <li>Researched Texas property market & HAR MLS listings weekly to identify USPs.</li>
+            <li>Wrote SEO-optimized listing captions; edited long-form Home Tour videos into short Reels.</li>
+            <li>Set up QA process verifying 100% accuracy on property specs, pricing, and brand tone before publishing.</li>
           </ul>
         </div>
         
