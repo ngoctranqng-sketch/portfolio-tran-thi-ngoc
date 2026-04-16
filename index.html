@@ -277,16 +277,21 @@
   .project-tasks li::before { content: '→'; position: absolute; left: 0; top: 0; color: var(--teal); font-weight: bold; }
   .project-tasks li strong { color: var(--dark); font-weight: 600; }
 
-  /* RESULTS */
+/* RESULTS */
   .project-results-wrapper { margin-top: auto; } /* Luôn bám đáy */
   .project-results-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gold); margin-bottom: 12px; }
-  .result-pill-container { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; min-height: 68px; }
-  .result-pill { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; padding: 6px 12px; background: var(--teal-pale); color: var(--teal-dark); border-radius: 4px; }
   
-  .project-link { display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--dark); text-decoration: none; transition: all 0.3s; align-self: flex-start; }
-  .project-link::after { content: '→'; font-size: 16px; color: var(--gold); transition: 0.3s; }
-  .project-link:hover { color: var(--teal-dark); }
-  .project-link:hover::after { transform: translateX(4px); color: var(--teal-dark); }
+  .result-pill-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-content: flex-start; 
+    align-items: flex-start; /* Thần chú chống kéo giãn thẻ đây! */
+    gap: 8px; 
+    margin-bottom: 24px; 
+    min-height: 68px; 
+  }
+  
+  .result-pill { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; padding: 6px 12px; background: var(--teal-pale); color: var(--teal-dark); border-radius: 4px; }
 
   /* ── SKILLS ── */
   #skills { background: var(--white); }
@@ -624,7 +629,7 @@
 
     <div class="project-card fade-in">
       <div class="project-header-img-wrapper">
-        <img src="to-tuong-chuyen-nganh-1.png" alt="To Tuong Chuyen Nganh" class="project-header-img" onerror="this.parentElement.style.background='linear-gradient(135deg,#1A1A2E,#2D2D44)'; this.style.display='none';">
+        <img src="to-tuong-chuyen-nganh-1" alt="To Tuong Chuyen Nganh" class="project-header-img" onerror="this.parentElement.style.background='linear-gradient(135deg,#1A1A2E,#2D2D44)'; this.style.display='none';">
       </div>
       <div class="project-body">
         <div class="project-number">02</div>
