@@ -243,6 +243,29 @@
     .project p { color: var(--muted); font-size: 14px; margin: 0; }
     .stats { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 22px; }
     .stat-chip { padding: 8px 10px; border-radius: 10px; background: rgba(104,88,232,.08); color: #4f45a6; font: 500 11px/1 "DM Mono", monospace; }
+    .library-head { margin: 70px 0 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; }
+    .library-head h3 { margin: 10px 0 0; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -.045em; }
+    .library-head p { margin: 0; color: var(--muted); }
+    .project-library { display: grid; gap: 12px; }
+    .case-detail { border-radius: 22px; overflow: hidden; }
+    .case-detail summary {
+      list-style: none; cursor: pointer; padding: 22px 24px; display: grid;
+      grid-template-columns: 54px 1fr auto; gap: 18px; align-items: center;
+    }
+    .case-detail summary::-webkit-details-marker { display: none; }
+    .case-index { color: var(--violet); font: 500 12px/1 "DM Mono", monospace; }
+    .case-title b { display: block; font-size: 18px; letter-spacing: -.02em; }
+    .case-title span { display: block; margin-top: 3px; color: var(--muted); font-size: 12px; }
+    .case-toggle { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; background: rgba(104,88,232,.09); color: var(--violet); font-size: 20px; transition: transform .25s; }
+    .case-detail[open] .case-toggle { transform: rotate(45deg); }
+    .case-content { padding: 2px 24px 26px 96px; border-top: 1px solid var(--line); }
+    .case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; padding-top: 25px; }
+    .case-block h4 { margin: 0 0 9px; color: var(--violet); font: 500 11px/1.2 "DM Mono", monospace; text-transform: uppercase; letter-spacing: .08em; }
+    .case-block p, .case-block ul { margin: 0; color: var(--muted); font-size: 13px; }
+    .case-block ul { padding-left: 17px; }
+    .case-block li + li { margin-top: 7px; }
+    .case-evidence { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 22px; }
+    .case-evidence span { padding: 8px 10px; border-radius: 9px; background: rgba(255,255,255,.6); border: 1px solid var(--line); color: #4f5360; font: 500 10px/1 "DM Mono", monospace; }
     .system-visual {
       height: 260px; padding: 27px; background: linear-gradient(150deg, #171824, #252746);
       display: flex; align-items: center; justify-content: center; overflow: hidden;
@@ -357,6 +380,10 @@
       .dash-card:last-child { display: none; }
       .project, .project.wide, .project.small { grid-column: 1 / -1; min-height: auto; }
       .project-media, .system-visual { height: 230px; }
+      .library-head { grid-template-columns: 1fr; gap: 14px; }
+      .case-detail summary { grid-template-columns: 38px 1fr auto; padding: 20px 16px; gap: 10px; }
+      .case-content { padding: 0 16px 23px; }
+      .case-grid { grid-template-columns: 1fr; gap: 20px; }
       .role { grid-template-columns: 1fr; gap: 9px; padding: 25px 22px; }
       .process { grid-template-columns: 1fr; }
       .step:not(:last-child)::after { content: "↓"; right: 22px; top: auto; bottom: -18px; }
@@ -538,6 +565,133 @@
               <div class="stats"><span class="stat-chip">40K+ subscribers</span><span class="stat-chip">57M+ views</span></div>
             </div>
           </article>
+        </div>
+
+        <div class="library-head reveal">
+          <div><span class="kicker">Full project library</span><h3>The details behind the highlights.</h3></div>
+          <p>Open each case to see the context, my contribution, and the evidence or output. This section keeps the breadth of my original portfolio without making every visitor read everything at once.</p>
+        </div>
+
+        <div class="project-library">
+          <details class="case-detail glass reveal" open>
+            <summary><span class="case-index">01</span><span class="case-title"><b>Ethan Realty Group — Organic Facebook Growth</b><span>Content strategy · Design · Short-form video · Reporting</span></span><span class="case-toggle">+</span></summary>
+            <div class="case-content">
+              <div class="case-grid">
+                <div class="case-block"><h4>Context</h4><p>A small Facebook page needed a consistent content presence for Vietnamese-speaking audiences interested in Texas real estate.</p></div>
+                <div class="case-block"><h4>My contribution</h4><ul><li>Built the content calendar and monthly tracking system.</li><li>Researched and verified listings, wrote captions, designed branded assets, edited Reels, and published content.</li><li>Created reusable templates for listings, sold/under-contract updates, business cards, and seasonal campaigns.</li></ul></div>
+                <div class="case-block"><h4>Outcome</h4><p>The page grew from fewer than 100 to 2,041 followers through organic content. One property video exceeded 70,000 views and generated 904 interactions.</p></div>
+              </div>
+              <div class="case-evidence"><span>537,477 organic views</span><span>7,561 interactions</span><span>10,093 visits</span><span>1,698 link clicks</span><span>~6 posts/week</span></div>
+            </div>
+          </details>
+
+          <details class="case-detail glass reveal" open>
+            <summary><span class="case-index">02</span><span class="case-title"><b>Win Nguyen Real Estate Group — Organic Content Strategy</b><span>Calendar · Educational video · Listing content · Performance tracking</span></span><span class="case-toggle">+</span></summary>
+            <div class="case-content">
+              <div class="case-grid">
+                <div class="case-block"><h4>Context</h4><p>The brand needed regular, useful content for Vietnamese buyers exploring the Texas property market.</p></div>
+                <div class="case-block"><h4>My contribution</h4><ul><li>Planned the content calendar and maintained monthly performance reports.</li><li>Produced educational short videos and image-based listings from research to final publishing.</li><li>Adapted property information into clear Vietnamese captions and branded creative.</li></ul></div>
+                <div class="case-block"><h4>Outcome</h4><p>From October 2025 to August 2026, the content I managed materially outperformed the prior comparison period across views, interactions, and link clicks.</p></div>
+              </div>
+              <div class="case-evidence"><span>+75% views</span><span>+146% interactions</span><span>+590% link clicks</span><span>Top owned video: 186,713 views</span><span>Top listing: 127,559 views</span></div>
+            </div>
+          </details>
+
+          <details class="case-detail glass reveal">
+            <summary><span class="case-index">03</span><span class="case-title"><b>VietnamWorks inTECH — Technical Content Engine</b><span>Editorial ownership · SEO · Expert interviews · Bilingual content</span></span><span class="case-toggle">+</span></summary>
+            <div class="case-content">
+              <div class="case-grid">
+                <div class="case-block"><h4>Context</h4><p>VietnamWorks inTECH needed a reliable editorial stream that could serve both technology professionals and broader job-seeker audiences.</p></div>
+                <div class="case-block"><h4>My contribution</h4><ul><li>Owned 100% of the technical blog workload within a three-person marketing team.</li><li>Researched and edited topics across software development, AI, data, cloud, cybersecurity, tools, and technology careers.</li><li>Interviewed Product and Engineering experts, then translated specialist explanations into accessible articles.</li></ul></div>
+                <div class="case-block"><h4>Outcome</h4><p>Created a large bilingual knowledge base and exceeded the annual blog-session target while supporting campaigns, partnerships, and employer-brand initiatives.</p></div>
+              </div>
+              <div class="case-evidence"><span>300+ technical/SEO articles</span><span>134% annual blog-session target</span><span>Vietnamese & English</span></div>
+            </div>
+          </details>
+
+          <details class="case-detail glass reveal">
+            <summary><span class="case-index">04</span><span class="case-title"><b>IT Market Report — Research-led Content Campaign</b><span>Research communication · Editorial · Launch campaign</span></span><span class="case-toggle">+</span></summary>
+            <div class="case-content">
+              <div class="case-grid">
+                <div class="case-block"><h4>Challenge</h4><p>Turn detailed IT labor-market findings into credible, readable content that could position the brand as a useful industry voice.</p></div>
+                <div class="case-block"><h4>My contribution</h4><ul><li>Helped shape report content for Vietnamese and English audiences.</li><li>Coordinated editorial and visual production.</li><li>Supported the multi-channel communication rollout across owned channels and media outreach.</li></ul></div>
+                <div class="case-block"><h4>Outcome</h4><p>The report earned meaningful first-month readership and was cited or republished by more than 60 media outlets.</p></div>
+              </div>
+              <div class="case-evidence"><span>7,000+ first-month views</span><span>60+ media citations</span></div>
+            </div>
+          </details>
+
+          <details class="case-detail glass reveal">
+            <summary><span class="case-index">05</span><span class="case-title"><b>“Tỏ Tường Chuyện Ngành” — Expert Interview Series</b><span>Topic planning · Interviewing · Long-form writing · Stakeholder approval</span></span><span class="case-toggle">+</span></summary>
+            <div class="case-content">
+              <div class="case-grid">
+                <div class="case-block"><h4>Challenge</h4><p>Build trust with technology audiences through practical perspectives from people working inside the industry.</p></div>
+                <div class="case-block"><h4>My contribution</h4><ul><li>Proposed relevant topics and researched the technical context.</li><li>Prepared tailored questions for Product and Engineering experts.</li><li>Reworked specialist answers into clear long-form stories and coordinated review before publication.</li></ul></div>
+                <div class="case-block"><h4>Output</h4><p>An ongoing thought-leadership series that made technical career and product knowledge easier for readers to understand.</p></div>
+              </div>
+              <div class="case-evidence"><span>Expert-led editorial</span><span>Research to publication</span><span>Organic content</span></div>
+            </div>
+          </details>
+
+          <details class="case-detail glass reveal">
+            <summary><span class="case-index">06</span><span class="case-title"><b>“1 Tách Codefee” — Branded Talkshow</b><span>Campaign content · Video support · Social & email distribution</span></span><span class="case-toggle">+</span></summary>
+            <div class="case-content">
+              <div class="case-grid">
+                <div class="case-block"><h4>Challenge</h4><p>Use a friendly talkshow format to connect technology job seekers with career knowledge and the VietnamWorks platform.</p></div>
+                <div class="case-block"><h4>My contribution</h4><ul><li>Supported communication planning across social media and email.</li><li>Created campaign content and coordinated website banners and audience activities.</li><li>Supported the production team during filming and helped carry the story through distribution.</li></ul></div>
+                <div class="case-block"><h4>Output</h4><p>A multi-touchpoint branded content series combining video, social distribution, email, and job-seeker activations.</p></div>
+              </div>
+              <div class="case-evidence"><span>Branded content</span><span>Social + email</span><span>Production support</span></div>
+            </div>
+          </details>
+
+          <details class="case-detail glass reveal">
+            <summary><span class="case-index">07</span><span class="case-title"><b>Partner Communications — NAB, FPT, BKACAD, GDG & LIKELION</b><span>B2B communications · Event content · Executive speech</span></span><span class="case-toggle">+</span></summary>
+            <div class="case-content">
+              <div class="case-grid">
+                <div class="case-block"><h4>Scope</h4><p>Supported communications for partner-led technology and career initiatives with universities, developer communities, and major technology employers.</p></div>
+                <div class="case-block"><h4>Selected work</h4><ul><li>NAB Security Jam: wrote campaign posts, coordinated with partners, and prepared an IT Director's event speech.</li><li>BKACAD: supported communications for workshops about AI careers and the game industry.</li><li>FPT University, Google Developer Group, and LIKELION: produced promotional content for job fairs and developer events.</li></ul></div>
+                <div class="case-block"><h4>Working style</h4><p>Translated partner briefs into channel-ready copy, managed review rounds, and adapted messaging for student and technology audiences.</p></div>
+              </div>
+              <div class="case-evidence"><span>NAB Security Jam: 32 teams</span><span>Partner coordination</span><span>Event communications</span><span>Executive speechwriting</span></div>
+            </div>
+          </details>
+
+          <details class="case-detail glass reveal">
+            <summary><span class="case-index">08</span><span class="case-title"><b>Google Empower Growth 2023</b><span>Integrated campaign support · Career content · Event execution</span></span><span class="case-toggle">+</span></summary>
+            <div class="case-content">
+              <div class="case-grid">
+                <div class="case-block"><h4>Context</h4><p>A multi-format initiative required consistent communication across scholarship, webinar, office-tour, internship, and career-fair touchpoints.</p></div>
+                <div class="case-block"><h4>My contribution</h4><ul><li>Created and adapted campaign content across program formats.</li><li>Wrote brochure content supporting employer-brand communication.</li><li>Supported on-site coordination for the Career Fair.</li></ul></div>
+                <div class="case-block"><h4>Output</h4><p>A connected campaign experience spanning awareness content, educational sessions, employer-brand material, and in-person activation.</p></div>
+              </div>
+              <div class="case-evidence"><span>Integrated campaign</span><span>Career communications</span><span>Online + on-site</span></div>
+            </div>
+          </details>
+
+          <details class="case-detail glass reveal">
+            <summary><span class="case-index">09</span><span class="case-title"><b>AI-assisted Content Systems — n8n & Remotion</b><span>Content operations · Workflow customization · Practical automation</span></span><span class="case-toggle">+</span></summary>
+            <div class="case-content">
+              <div class="case-grid">
+                <div class="case-block"><h4>Problem</h4><p>Property research and graphic-heavy short videos involved repetitive steps that could be standardized without removing human review.</p></div>
+                <div class="case-block"><h4>My contribution</h4><ul><li>Built an n8n workflow that requests property data, filters and scores listings, removes duplicates, and appends selected results to Google Sheets.</li><li>Customized a paid Remotion template with brand colors, logos, layouts, voice selection, caption timing, graphics, and API connections.</li><li>Used the resulting videos in real Facebook content for both real-estate roles.</li></ul></div>
+                <div class="case-block"><h4>Boundary</h4><p>Both systems run locally and remain human-reviewed. I used AI-assisted development and adapted existing components rather than claiming every line was coded independently.</p></div>
+              </div>
+              <div class="case-evidence"><span>n8n + REST API</span><span>Google Sheets</span><span>Remotion</span><span>Gemini TTS</span><span>Groq Whisper</span></div>
+            </div>
+          </details>
+
+          <details class="case-detail glass reveal">
+            <summary><span class="case-index">10</span><span class="case-title"><b>Hủ Muối Mặn — Independent Creator Channel</b><span>Translation · Subtitling · Video editing · Audience growth</span></span><span class="case-toggle">+</span></summary>
+            <div class="case-content">
+              <div class="case-grid">
+                <div class="case-block"><h4>Context</h4><p>A self-directed creator project built around translated and subtitled lyric-video content.</p></div>
+                <div class="case-block"><h4>My contribution</h4><ul><li>Selected content, translated and localized lyrics, created subtitles, edited videos, and published independently.</li><li>Learned through audience behavior, retention patterns, consistency, and repeated production.</li></ul></div>
+                <div class="case-block"><h4>Outcome</h4><p>The channel grew into a substantial independent audience and remains early evidence of my creator instinct and hands-on production discipline.</p></div>
+              </div>
+              <div class="case-evidence"><span>40K+ subscribers</span><span>57M+ views</span><span>End-to-end ownership</span></div>
+            </div>
+          </details>
         </div>
       </section>
 
