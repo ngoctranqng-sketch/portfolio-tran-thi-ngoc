@@ -316,6 +316,101 @@
     .tool-group h3 { margin: 0 0 14px; font-size: 16px; }
     .tool-group p { margin: 0; color: var(--muted); font-size: 13px; }
 
+    /* Connected marketing narrative */
+    .story { padding-bottom: 122px; }
+    .story-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 18px; }
+    .story-main { padding: clamp(30px,5vw,56px); border-radius: 30px; }
+    .story-main h3 { margin: 12px 0 18px; font-size: clamp(31px,4vw,48px); line-height: 1.08; letter-spacing: -.045em; }
+    .story-main p { margin: 0; color: var(--muted); }
+    .story-steps { border-radius: 30px; overflow: hidden; }
+    .story-step { display: grid; grid-template-columns: 48px 1fr; gap: 15px; padding: 24px; border-bottom: 1px solid var(--line); }
+    .story-step:last-child { border-bottom: 0; }
+    .story-step .year { color: var(--violet); font: 500 11px/1.4 "DM Mono",monospace; }
+    .story-step b { display: block; margin-bottom: 5px; }
+    .story-step span { display: block; color: var(--muted); font-size: 13px; }
+
+    .capabilities { padding-bottom: 122px; }
+    .cap-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+    .cap-card { padding: 30px; border-radius: 26px; min-height: 330px; display: flex; flex-direction: column; }
+    .cap-top { display: flex; justify-content: space-between; align-items: center; }
+    .cap-icon { width: 42px; height: 42px; border-radius: 14px; background: linear-gradient(135deg,var(--violet),var(--blue)); color: white; display: grid; place-items: center; font-weight: 800; }
+    .cap-card h3 { margin: 30px 0 11px; font-size: 26px; line-height: 1.15; letter-spacing: -.035em; }
+    .cap-card > p { margin: 0; color: var(--muted); font-size: 14px; }
+    .cap-proof { margin-top: auto; padding-top: 24px; display: grid; grid-template-columns: repeat(2,1fr); gap: 8px; }
+    .cap-proof div { padding: 13px; border-radius: 13px; background: rgba(255,255,255,.6); border: 1px solid rgba(255,255,255,.9); }
+    .cap-proof b { display: block; font-size: 17px; letter-spacing: -.025em; }
+    .cap-proof span { display: block; color: var(--muted); font-size: 10px; line-height: 1.35; margin-top: 3px; }
+    .tool-chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
+    .tool-chips span { padding: 7px 9px; border: 1px solid var(--line); border-radius: 9px; color: #555b6a; font: 500 10px/1 "DM Mono",monospace; }
+
+    .career { padding-bottom: 122px; }
+    .career-list { display: grid; gap: 18px; }
+    .career-card { border-radius: 28px; padding: clamp(25px,4vw,42px); }
+    .career-header { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: start; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+    .career-company { color: var(--violet); font: 500 11px/1.4 "DM Mono",monospace; text-transform: uppercase; letter-spacing: .06em; }
+    .career-card h3 { margin: 10px 0 5px; font-size: clamp(25px,3vw,36px); line-height: 1.12; letter-spacing: -.04em; }
+    .career-meta { color: var(--muted); font-size: 13px; }
+    .career-period { text-align: right; color: var(--muted); font: 500 11px/1.5 "DM Mono",monospace; white-space: nowrap; }
+    .career-body { display: grid; grid-template-columns: 1.25fr .75fr; gap: 36px; padding-top: 25px; }
+    .career-body h4 { margin: 0 0 12px; font: 500 11px/1.3 "DM Mono",monospace; color: var(--violet); text-transform: uppercase; letter-spacing: .07em; }
+    .career-body ul { margin: 0; padding-left: 19px; color: var(--muted); font-size: 14px; }
+    .career-body li + li { margin-top: 8px; }
+    .impact-stack { display: grid; gap: 8px; }
+    .impact-line { padding: 13px 14px; border-radius: 13px; background: rgba(104,88,232,.07); }
+    .impact-line b { display: block; font-size: 16px; }
+    .impact-line span { display: block; color: var(--muted); font-size: 10px; margin-top: 2px; }
+    .career-mini { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; }
+    .career-mini .career-body { grid-template-columns: 1fr; }
+
+    .portfolio { padding-bottom: 122px; }
+    .chapter { margin-top: 68px; }
+    .chapter:first-of-type { margin-top: 0; }
+    .chapter-head { display: grid; grid-template-columns: 72px 1fr auto; gap: 18px; align-items: end; margin-bottom: 20px; }
+    .chapter-no { color: var(--coral); font: 500 12px/1 "DM Mono",monospace; }
+    .chapter-head h3 { margin: 0; font-size: clamp(27px,3.6vw,43px); letter-spacing: -.045em; line-height: 1.05; }
+    .chapter-head p { margin: 0; max-width: 410px; color: var(--muted); font-size: 13px; }
+    .case-stack { display: grid; gap: 16px; }
+    .work-case { border-radius: 28px; overflow: hidden; }
+    .work-case-grid { display: grid; grid-template-columns: .72fr 1.28fr; }
+    .case-side { min-height: 100%; padding: 30px; color: white; background: linear-gradient(145deg,#1c1f32,#303762); position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; }
+    .case-side::after { content:""; position:absolute; width:220px; height:220px; border-radius:50%; background:rgba(104,88,232,.48); filter:blur(45px); right:-100px; bottom:-100px; }
+    .case-side > * { position: relative; z-index: 1; }
+    .case-side.coral { background: linear-gradient(145deg,#322027,#7b3342); }
+    .case-side.blue { background: linear-gradient(145deg,#172635,#245c83); }
+    .case-side.light { color:var(--ink); background:linear-gradient(145deg,#eef0ff,#dce4ff); }
+    .case-type { font: 500 10px/1.4 "DM Mono",monospace; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.62); }
+    .case-side.light .case-type { color:#5e5a8d; }
+    .case-side h4 { margin: 34px 0 0; font-size: clamp(26px,3.4vw,40px); line-height:1.04; letter-spacing:-.05em; }
+    .case-number { font:500 12px/1 "DM Mono",monospace; color:rgba(255,255,255,.5); }
+    .case-side.light .case-number { color:#6c688e; }
+    .case-main { padding: clamp(26px,4vw,42px); }
+    .case-role { color:var(--violet); font:500 11px/1.4 "DM Mono",monospace; text-transform:uppercase; letter-spacing:.06em; }
+    .case-intro { margin:14px 0 24px; color:var(--muted); font-size:14px; }
+    .case-three { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .case-three h5 { margin:0 0 8px; font:500 10px/1.3 "DM Mono",monospace; color:var(--violet); text-transform:uppercase; letter-spacing:.07em; }
+    .case-three p,.case-three ul { margin:0; padding:0; color:var(--muted); font-size:12px; }
+    .case-three ul { padding-left:16px; }
+    .case-three li + li { margin-top:6px; }
+    .result-strip { display:flex; flex-wrap:wrap; gap:7px; margin-top:23px; padding-top:20px; border-top:1px solid var(--line); }
+    .result-strip span { padding:8px 10px; border-radius:9px; background:rgba(104,88,232,.08); color:#5047a3; font:500 10px/1 "DM Mono",monospace; }
+    .project-gallery { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:20px; }
+    .project-gallery img { width:100%; height:115px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,.9); }
+    .case-pair { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+    .case-pair .work-case-grid { grid-template-columns:1fr; }
+    .case-pair .case-side { min-height:220px; }
+    .case-pair .case-three { grid-template-columns:1fr; }
+
+    .credentials { padding-bottom:122px; }
+    .credential-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:16px; }
+    .toolbox,.learning { padding:30px; border-radius:26px; }
+    .toolbox h3,.learning h3 { margin:0 0 20px; font-size:24px; letter-spacing:-.03em; }
+    .tool-row { display:grid; grid-template-columns:150px 1fr; gap:16px; padding:14px 0; border-top:1px solid var(--line); }
+    .tool-row b { font-size:12px; }
+    .tool-row span { color:var(--muted); font-size:12px; }
+    .learning-item { padding:15px 0; border-top:1px solid var(--line); }
+    .learning-item b { display:block; font-size:14px; }
+    .learning-item span { display:block; margin-top:4px; color:var(--muted); font-size:11px; }
+
     .contact { padding-bottom: 42px; }
     .contact-card {
       padding: clamp(38px, 7vw, 78px); border-radius: 36px; text-align: center; position: relative; overflow: hidden;
@@ -350,6 +445,13 @@
       .role { grid-template-columns: 150px 1fr; }
       .role-type { display: none; }
       .tools-grid { grid-template-columns: repeat(2, 1fr); }
+      .story-grid,.credential-grid { grid-template-columns:1fr; }
+      .career-body { grid-template-columns:1fr; }
+      .work-case-grid { grid-template-columns:1fr; }
+      .case-side { min-height:250px; }
+      .case-three { grid-template-columns:1fr; }
+      .chapter-head { grid-template-columns:55px 1fr; }
+      .chapter-head p { grid-column:2; }
     }
 
     @media (max-width: 720px) {
@@ -388,6 +490,14 @@
       .process { grid-template-columns: 1fr; }
       .step:not(:last-child)::after { content: "↓"; right: 22px; top: auto; bottom: -18px; }
       .tools-grid { grid-template-columns: 1fr; }
+      .cap-grid,.career-mini,.case-pair { grid-template-columns:1fr; }
+      .cap-proof { grid-template-columns:1fr 1fr; }
+      .career-header { grid-template-columns:1fr; }
+      .career-period { text-align:left; }
+      .chapter-head { grid-template-columns:1fr; }
+      .chapter-head p { grid-column:auto; }
+      .project-gallery { grid-template-columns:repeat(2,1fr); }
+      .tool-row { grid-template-columns:1fr; gap:5px; }
       .workflow { grid-template-columns: 1fr 1fr; }
       footer { flex-direction: column; gap: 5px; }
     }
@@ -408,9 +518,9 @@
       </a>
       <button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
       <div class="nav-links">
-        <a href="#expertise">Expertise</a>
-        <a href="#work">Selected work</a>
+        <a href="#expertise">Capabilities</a>
         <a href="#experience">Experience</a>
+        <a href="#work">Projects</a>
         <a href="#contact" class="nav-cta">Let's connect</a>
       </div>
     </nav>
@@ -421,8 +531,8 @@
       <section class="hero">
         <div class="hero-copy reveal">
           <span class="eyebrow">Content & Marketing Communications</span>
-          <h1>I turn complex ideas into content people <span>understand.</span></h1>
-          <p>Across technology and U.S. real estate, I research, write, design, edit, publish, and improve content from first idea to measurable outcome.</p>
+          <h1>I connect complex ideas to content people <span>act on.</span></h1>
+          <p>Across technology and U.S. real estate, I connect research, strategy, writing, design, video, distribution, reporting, and workflow improvement—from the first idea to a measurable outcome.</p>
           <div class="hero-actions">
             <a class="button primary" href="#work">View selected work <span class="arrow">↘</span></a>
             <a class="button secondary" href="mailto:ngoctran.qng@gmail.com">Email me</a>
@@ -445,7 +555,151 @@
         <div class="proof-item"><b>57M+</b><span>views on an independent creator channel</span></div>
       </section>
 
-      <section class="expertise" id="expertise">
+      <section class="story" id="about">
+        <div class="section-head reveal">
+          <div><span class="kicker">The through-line</span><h2>Creator instinct.<br>Marketing discipline.</h2></div>
+          <p>My work has moved across entertainment, technology, hospitality, and U.S. real estate—but the job has stayed consistent: understand the audience, make complex information useful, deliver the content, and improve it with evidence.</p>
+        </div>
+        <div class="story-grid">
+          <article class="story-main glass reveal">
+            <span class="label">My positioning</span>
+            <h3>End-to-end content ownership—not just copywriting.</h3>
+            <p>I can take a content problem from research and planning through writing, design, short-form video, stakeholder review, publishing, performance reporting, and workflow improvement. That range lets me see how every piece connects instead of treating content as isolated deliverables.</p>
+          </article>
+          <div class="story-steps glass reveal">
+            <div class="story-step"><span class="year">2019</span><div><b>Learned by creating</b><span>Built an independent YouTube audience through translation, editing, publishing, and iteration.</span></div></div>
+            <div class="story-step"><span class="year">2022</span><div><b>Built technical authority</b><span>Owned VietnamWorks inTECH's blog and supported expert, report, campaign, and partner content.</span></div></div>
+            <div class="story-step"><span class="year">2025</span><div><b>Connected content to growth</b><span>Managed organic Facebook content for two separate Texas real-estate teams.</span></div></div>
+            <div class="story-step"><span class="year">NOW</span><div><b>Improving how work gets made</b><span>Adding reusable systems, reporting, n8n workflows, and AI-assisted video production.</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="capabilities" id="expertise">
+        <div class="section-head reveal">
+          <div><span class="kicker">Capabilities</span><h2>Skills, proven<br>inside the work.</h2></div>
+          <p>Each capability below links directly to a result, output, or working process. The portfolio then shows the projects behind that evidence.</p>
+        </div>
+        <div class="cap-grid">
+          <article class="cap-card glass reveal">
+            <div class="cap-top"><span class="cap-icon">01</span><span class="label">Strategy & editorial</span></div>
+            <h3>Content strategy and technical storytelling</h3>
+            <p>Audience research, content pillars, editorial calendars, SEO briefs, bilingual writing, expert interviews, and turning unfamiliar subjects into clear narratives.</p>
+            <div class="tool-chips"><span>SEO</span><span>WordPress</span><span>Interviewing</span><span>EN/VN editing</span><span>Content planning</span></div>
+            <div class="cap-proof"><div><b>300+ articles</b><span>technical and SEO content</span></div><div><b>134% target</b><span>annual blog sessions</span></div></div>
+          </article>
+          <article class="cap-card glass reveal">
+            <div class="cap-top"><span class="cap-icon">02</span><span class="label">Social & video</span></div>
+            <h3>Organic social media and short-form production</h3>
+            <p>Research, scripts, captions, listing content, branded design, editing, publishing, and monthly optimization for Facebook and creator-led platforms.</p>
+            <div class="tool-chips"><span>Facebook</span><span>YouTube</span><span>CapCut</span><span>Premiere Pro</span><span>Canva</span></div>
+            <div class="cap-proof"><div><b>537K views</b><span>Ethan organic performance</span></div><div><b>+590% clicks</b><span>Win comparison period</span></div></div>
+          </article>
+          <article class="cap-card glass reveal">
+            <div class="cap-top"><span class="cap-icon">03</span><span class="label">Campaigns & stakeholders</span></div>
+            <h3>Integrated and partner communications</h3>
+            <p>Campaign copy, email and social distribution, event communications, executive speechwriting, expert approvals, and coordination with partner teams.</p>
+            <div class="tool-chips"><span>Campaign planning</span><span>Email</span><span>Partner review</span><span>Events</span><span>Speechwriting</span></div>
+            <div class="cap-proof"><div><b>60+ citations</b><span>IT Market Report</span></div><div><b>32 teams</b><span>NAB Security Jam</span></div></div>
+          </article>
+          <article class="cap-card glass reveal">
+            <div class="cap-top"><span class="cap-icon">04</span><span class="label">Operations & systems</span></div>
+            <h3>Content operations and practical automation</h3>
+            <p>Performance dashboards, QA checklists, reusable brand templates, listing-verification processes, API-based research, and AI-assisted video workflows.</p>
+            <div class="tool-chips"><span>Google Sheets</span><span>n8n</span><span>REST API</span><span>Remotion</span><span>AI-assisted workflows</span></div>
+            <div class="cap-proof"><div><b>~6 posts/week</b><span>repeatable operating rhythm</span></div><div><b>2 live systems</b><span>listing research and video</span></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="career" id="experience">
+        <div class="section-head reveal">
+          <div><span class="kicker">Work experience</span><h2>What I owned.<br>What changed.</h2></div>
+          <p>The two current real-estate roles are separate companies managed concurrently. Earlier experience at VietnamWorks inTECH established my technical-content and campaign foundation.</p>
+        </div>
+        <div class="career-list">
+          <article class="career-card glass reveal">
+            <div class="career-header"><div><span class="career-company">Ethan Realty Group · Texas real estate</span><h3>Content Creator</h3><span class="career-meta">Remote · Part-time · Facebook content operation</span></div><span class="career-period">MAR 2026—PRESENT</span></div>
+            <div class="career-body"><div><h4>Scope and ownership</h4><ul><li>Manage the Facebook workflow from content planning and property research to captions, branded design, short-form editing, publishing, and reporting.</li><li>Maintain a calendar and tracking sheet for personal deliverables and content support requested by agents.</li><li>Verify prices, property information, listing status, and brand consistency before publishing.</li><li>Created reusable templates for business cards, for-sale, just-listed, under-contract, and seasonal communication.</li></ul></div><div><h4>Verified impact</h4><div class="impact-stack"><div class="impact-line"><b>2,041 followers</b><span>from fewer than 100, organically</span></div><div class="impact-line"><b>537,477 views</b><span>March–September 2026</span></div><div class="impact-line"><b>7,561 interactions</b><span>plus 10,093 page visits</span></div><div class="impact-line"><b>1,698 link clicks</b><span>no paid media included</span></div></div></div></div>
+          </article>
+
+          <article class="career-card glass reveal">
+            <div class="career-header"><div><span class="career-company">Win Nguyen Real Estate Group · Texas real estate</span><h3>Content Creator</h3><span class="career-meta">Remote · Part-time · Separate concurrent role</span></div><span class="career-period">AUG 2025—PRESENT</span></div>
+            <div class="career-body"><div><h4>Scope and ownership</h4><ul><li>Research the Texas property market and translate listing details into relevant Vietnamese-language content.</li><li>Plan the content calendar and create educational short videos and image listing posts from idea to publication.</li><li>Write captions, edit footage, build branded visuals, and maintain monthly performance reports.</li><li>Review content carefully for property information, cultural relevance, and consistency before publishing.</li></ul></div><div><h4>Verified impact</h4><div class="impact-stack"><div class="impact-line"><b>+75% views</b><span>Oct 2025–Aug 2026 vs prior period</span></div><div class="impact-line"><b>+146% interactions</b><span>organic performance</span></div><div class="impact-line"><b>+590% link clicks</b><span>organic performance</span></div><div class="impact-line"><b>186,713 views</b><span>top owned educational video</span></div></div></div></div>
+          </article>
+
+          <article class="career-card glass reveal">
+            <div class="career-header"><div><span class="career-company">Navigos Group · VietnamWorks inTECH</span><h3>Marketing Communication Executive</h3><span class="career-meta">Technology recruitment · B2C/B2B content · Campaigns</span></div><span class="career-period">OCT 2022—APR 2025</span></div>
+            <div class="career-body"><div><h4>Scope and ownership</h4><ul><li>Owned 100% of the technical blog workflow in a team of one lead and two executives.</li><li>Researched, translated, edited, and published content across software development, AI, data, cloud, cybersecurity, programming languages, and technology careers.</li><li>Proposed interview topics, researched the subject, prepared questions, and converted Product and Engineering experts' answers into accessible stories.</li><li>Supported report launches, branded content, social/email campaigns, and partner communications with technology companies, universities, and developer communities.</li><li>Coordinated editorial, design, stakeholder review, and publishing across multiple concurrent initiatives.</li></ul></div><div><h4>Verified impact</h4><div class="impact-stack"><div class="impact-line"><b>300+ articles</b><span>bilingual technical and SEO content</span></div><div class="impact-line"><b>134% of target</b><span>annual blog sessions</span></div><div class="impact-line"><b>7,000+ views</b><span>IT Market Report, first month</span></div><div class="impact-line"><b>60+ media citations</b><span>report mentions and republications</span></div></div></div></div>
+          </article>
+
+          <div class="career-mini">
+            <article class="career-card glass reveal"><div class="career-header"><div><span class="career-company">New World Phu Quoc Resort</span><h3>Marketing Communication Intern</h3><span class="career-meta">Hospitality marketing</span></div><span class="career-period">JUN—SEP 2022</span></div><div class="career-body"><div><h4>Contribution</h4><ul><li>Supported Facebook and Instagram content and timely guest interactions.</li><li>Localized marketing materials from English into Vietnamese.</li><li>Assisted on-site events and local partnership activities.</li></ul></div></div></article>
+            <article class="career-card glass reveal"><div class="career-header"><div><span class="career-company">Hủ Muối Mặn · Independent project</span><h3>Content Creator & Video Editor</h3><span class="career-meta">Creator-led production</span></div><span class="career-period">2019—PRESENT</span></div><div class="career-body"><div><h4>Contribution and result</h4><ul><li>Independently selected, translated, subtitled, edited, and published lyric-video content.</li><li>Built an organic audience of 40K+ subscribers and 57M+ views.</li><li>Developed practical instincts for retention, localization, consistency, and audience response.</li></ul></div></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="work">
+        <div class="section-head reveal">
+          <div><span class="kicker">Project portfolio</span><h2>Projects, connected<br>to the capabilities.</h2></div>
+          <p>Rather than listing campaign names, each case shows the business or audience problem, the work I personally handled, and the result or concrete output.</p>
+        </div>
+
+        <div class="chapter">
+          <div class="chapter-head reveal"><span class="chapter-no">01</span><h3>Organic growth & always-on content</h3><p>Planning, production, publishing, and measurement for ongoing audience growth.</p></div>
+          <div class="case-stack">
+            <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side"><span class="case-type">Ethan Realty Group</span><h4>Building an organic Facebook content engine</h4><span class="case-number">CASE 01</span></div><div class="case-main"><span class="case-role">Lead contribution · End-to-end content operation</span><p class="case-intro">The page needed a consistent, credible content system—not isolated posts—for Vietnamese-speaking audiences interested in Texas property.</p><div class="case-three"><div><h5>Problem</h5><p>Small starting audience, limited reusable brand assets, and a steady need for accurate listing and educational content.</p></div><div><h5>What I owned</h5><ul><li>Calendar, research, captions, design, editing, publishing</li><li>Listing QA and agent content support</li><li>Templates and monthly performance tracking</li></ul></div><div><h5>Result</h5><p>Organic growth to 2,041 followers, 537,477 views, 7,561 interactions, 10,093 visits, and 1,698 link clicks.</p></div></div><div class="result-strip"><span>Top video: 70K+ views</span><span>904 interactions</span><span>~6 posts/week</span><span>100% organic</span></div></div></div></article>
+
+            <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side coral"><span class="case-type">Win Nguyen Real Estate Group</span><h4>Turning market information into high-performing social content</h4><span class="case-number">CASE 02</span></div><div class="case-main"><span class="case-role">Lead contribution · Research, production, reporting</span><p class="case-intro">The goal was to make Texas real-estate information useful and engaging for Vietnamese buyers through educational videos and clear listing posts.</p><div class="case-three"><div><h5>Problem</h5><p>Property information can feel repetitive and difficult to understand, especially for an overseas or diaspora audience.</p></div><div><h5>What I owned</h5><ul><li>Market and listing research</li><li>Content calendar and monthly tracking</li><li>Educational Reels, image listings, captions, and publishing</li></ul></div><div><h5>Result</h5><p>Views increased 75%, interactions 146%, and link clicks 590% against the previous comparison period.</p></div></div><div class="result-strip"><span>Top owned video: 186,713 views</span><span>1,267 interactions</span><span>Top listing: 127,559 views</span><span>77 link clicks</span></div><div class="project-gallery"><img src="win nguyen real estate write content 1.png" alt="Win Nguyen listing content" loading="lazy"><img src="win nguyen real estate write content 2.png" alt="Win Nguyen social post" loading="lazy"><img src="win nguyen real estate edit video.png" alt="Win Nguyen short video" loading="lazy"><img src="win nguyen real estate edit video 2.png" alt="Win Nguyen edited Reel" loading="lazy"></div></div></div></article>
+
+            <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side light"><span class="case-type">Hủ Muối Mặn</span><h4>Growing an audience through localization and consistency</h4><span class="case-number">CASE 03</span></div><div class="case-main"><span class="case-role">Independent creator · Full ownership</span><p class="case-intro">This personal project is where I first learned the full publishing cycle and the relationship between creative decisions and audience response.</p><div class="case-three"><div><h5>Audience need</h5><p>Vietnamese viewers wanted localized lyric content that preserved the emotion and meaning of international songs.</p></div><div><h5>What I owned</h5><ul><li>Selection, translation, localization, subtitling</li><li>Visual editing and publishing</li><li>Iteration based on audience response</li></ul></div><div><h5>Result</h5><p>Built an organic community of more than 40,000 subscribers and generated more than 57 million views.</p></div></div><div class="result-strip"><span>40K+ subscribers</span><span>57M+ views</span><span>Organic creator growth</span></div></div></div></article>
+          </div>
+        </div>
+
+        <div class="chapter">
+          <div class="chapter-head reveal"><span class="chapter-no">02</span><h3>Technical content & brand authority</h3><p>Making specialist knowledge understandable, discoverable, and credible.</p></div>
+          <div class="case-stack">
+            <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side blue"><span class="case-type">VietnamWorks inTECH</span><h4>Operating a bilingual technical content engine</h4><span class="case-number">CASE 04</span></div><div class="case-main"><span class="case-role">Editorial owner · Researcher · Writer/editor</span><p class="case-intro">The brand needed a consistent knowledge platform that could serve developers, technology candidates, and broader career audiences.</p><div class="case-three"><div><h5>Scope</h5><p>Software development, AI, data, cloud, cybersecurity, programming languages, product updates, and career guidance.</p></div><div><h5>Workflow</h5><ul><li>Topic research and SEO framing</li><li>Vietnamese/English writing, translation, editing</li><li>CMS publishing and performance review</li></ul></div><div><h5>Result</h5><p>Produced or managed 300+ articles and delivered 134% of the annual blog-session target.</p></div></div><div class="result-strip"><span>100% blog ownership</span><span>300+ articles</span><span>134% annual target</span></div></div></div></article>
+
+            <div class="case-pair">
+              <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side light"><span class="case-type">IT Market Report</span><h4>Turning labor-market data into a cited industry story</h4><span class="case-number">CASE 05</span></div><div class="case-main"><span class="case-role">Editorial and campaign contribution</span><p class="case-intro">Helped translate detailed market findings into bilingual content and a launch narrative that audiences and media could use.</p><div class="case-three"><div><h5>What I did</h5><ul><li>Developed report content for EN/VN readers</li><li>Coordinated editorial and visual production</li><li>Supported launch communications and media reach</li></ul></div><div><h5>Evidence</h5><p>7,000+ views in the first month and more than 60 media citations, mentions, or republications.</p></div></div><div class="result-strip"><span>7,000+ month-one views</span><span>60+ media citations</span></div></div></div></article>
+              <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side"><span class="case-type">Tỏ Tường Chuyện Ngành</span><h4>Converting expert knowledge into accessible interviews</h4><span class="case-number">CASE 06</span></div><div class="case-main"><span class="case-role">Planner · Interviewer · Writer</span><p class="case-intro">Built thought-leadership content around real Product and Engineering perspectives instead of generic career advice.</p><div class="case-three"><div><h5>What I did</h5><ul><li>Proposed topics and researched technical context</li><li>Prepared tailored expert questions</li><li>Rewrote specialist answers for broader readers and coordinated approval</li></ul></div><div><h5>Output</h5><p>An ongoing expert-content format that strengthened the blog's depth and connected the brand with practitioners.</p></div></div><div class="result-strip"><span>Expert-led editorial</span><span>Research to publication</span></div></div></div></article>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter">
+          <div class="chapter-head reveal"><span class="chapter-no">03</span><h3>Campaigns, events & partnerships</h3><p>Connecting briefs, stakeholders, channels, and on-site delivery.</p></div>
+          <div class="case-stack">
+            <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side coral"><span class="case-type">NAB × AWS × FPT University</span><h4>NAB Security Jam 2023</h4><span class="case-number">CASE 07</span></div><div class="case-main"><span class="case-role">Partner communications · Content writer · Speechwriter</span><p class="case-intro">A student coding competition required clear coordination among multiple brands while keeping the communication relevant to university participants.</p><div class="case-three"><div><h5>Brief</h5><p>Promote a team-based coding competition hosted on an AWS platform for students in Ho Chi Minh City.</p></div><div><h5>What I owned</h5><ul><li>Worked directly with partner stakeholders</li><li>Wrote campaign content from draft through approval</li><li>Prepared the speech for my company's IT Director</li></ul></div><div><h5>Result</h5><p>Supported communications for a live competition involving 32 student teams and four partner organizations.</p></div></div><div class="result-strip"><span>32 teams</span><span>NAB</span><span>AWS</span><span>FPT University</span><span>Executive speech</span></div></div></div></article>
+
+            <div class="case-pair">
+              <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side blue"><span class="case-type">Branded talkshow</span><h4>1 Tách Codefee</h4><span class="case-number">CASE 08</span></div><div class="case-main"><span class="case-role">Campaign content · Production support</span><p class="case-intro">A branded talkshow designed to connect technology job seekers with practical career knowledge.</p><div class="case-three"><div><h5>Contribution</h5><ul><li>Supported the communication plan</li><li>Created social and email content</li><li>Coordinated banners and audience activations</li><li>Supported filming on site</li></ul></div><div><h5>Output</h5><p>A multi-channel format combining video, social, email, website placements, and job-seeker activities.</p></div></div><div class="result-strip"><span>Video campaign</span><span>Social + email</span><span>On-site production</span></div></div></div></article>
+              <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side light"><span class="case-type">Google partnership</span><h4>Empower Growth 2023</h4><span class="case-number">CASE 09</span></div><div class="case-main"><span class="case-role">Integrated campaign execution</span><p class="case-intro">A multi-format career initiative spanning awareness, learning, employer branding, and live activation.</p><div class="case-three"><div><h5>Contribution</h5><ul><li>Created content for scholarship and internship programs</li><li>Supported three Career Talk webinars and office-tour communication</li><li>Wrote employer-brand brochure content</li><li>Supported the Career Fair on site</li></ul></div><div><h5>Output</h5><p>Connected online content, sales enablement, webinars, and an in-person career experience.</p></div></div><div class="result-strip"><span>Full-funnel campaign</span><span>Online + on-site</span></div></div></div></article>
+            </div>
+
+            <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side"><span class="case-type">Partner communication portfolio</span><h4>Universities, academies & developer communities</h4><span class="case-number">CASE 10</span></div><div class="case-main"><span class="case-role">Event communication and coordination</span><p class="case-intro">Extended the inTECH brand through partner programs serving students, developers, and early-career technology audiences.</p><div class="case-three"><div><h5>BKACAD</h5><p>Supported two online workshops covering AI careers and opportunities in the game industry.</p></div><div><h5>FPT & LIKELION</h5><p>Produced promotional communication and supported job-fair activities for student audiences.</p></div><div><h5>Google Developer Group</h5><p>Supported social and email promotion for Google I/O Extended Hanoi.</p></div></div><div class="result-strip"><span>Workshops</span><span>Job fairs</span><span>Developer event</span><span>Social + email</span></div><div class="project-gallery"><img src="Partnership with BKACAD for 2 webinar about IT industry in 2023 1.png" alt="BKACAD workshop communication" loading="lazy"><img src="Partnership with BKACAD for 2 webinar about IT industry in 2023 2.png" alt="BKACAD event creative" loading="lazy"><img src="Partnership with Google Developer Group Hanoi for 𝐆𝐨𝐨𝐠𝐥𝐞 𝐈:𝐎 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐇𝐚𝐧𝐨𝐢 𝟐𝟎𝟐𝟒!.png" alt="Google I/O Extended Hanoi communication" loading="lazy"><img src="Partnership with LikeLion at KTech College Job Fair 2024.png" alt="LIKELION K-Tech Job Fair communication" loading="lazy"></div></div></div></article>
+          </div>
+        </div>
+
+        <div class="chapter">
+          <div class="chapter-head reveal"><span class="chapter-no">04</span><h3>Content operations & automation</h3><p>Using systems to reduce repetitive work while keeping human judgment in the loop.</p></div>
+          <div class="case-stack">
+            <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side blue"><span class="case-type">n8n + Remotion</span><h4>Practical systems behind content production</h4><span class="case-number">CASE 11</span></div><div class="case-main"><span class="case-role">Workflow builder and template customizer · AI-assisted</span><p class="case-intro">I explored automation because research and graphic-heavy videos included repeated steps that could be standardized without publishing content blindly.</p><div class="case-three"><div><h5>Property workflow</h5><ul><li>Request listing data through an API</li><li>Filter price range, remove duplicates, score and categorize properties</li><li>Compare results and append selected listings to Google Sheets</li></ul></div><div><h5>Video workflow</h5><ul><li>Customized a paid Remotion template</li><li>Adapted brand colors, logo, layouts, voice options, captions, graphics, and API connections</li><li>Used outputs in published Facebook content</li></ul></div><div><h5>Limits and judgment</h5><p>Both tools run locally and remain human-reviewed. Development was AI-assisted; I configured, tested, reviewed, and iterated rather than writing every component unaided.</p></div></div><div class="result-strip"><span>n8n</span><span>REST API + JSON</span><span>Google Sheets</span><span>Remotion</span><span>Gemini TTS</span><span>Groq Whisper</span></div></div></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="credentials" id="approach">
+        <div class="section-head reveal"><div><span class="kicker">Tools & learning</span><h2>The toolkit behind<br>the execution.</h2></div><p>Grouped by how I use the tools—not as a disconnected list of logos.</p></div>
+        <div class="credential-grid">
+          <div class="toolbox glass reveal"><h3>Working toolkit</h3><div class="tool-row"><b>Plan & research</b><span>Content calendars · Audience research · Competitor review · Keyword research · UTM tracking</span></div><div class="tool-row"><b>Write & publish</b><span>WordPress · Mailchimp · Facebook · YouTube · Bilingual EN/VN editing</span></div><div class="tool-row"><b>Design & video</b><span>Canva · Figma · Photoshop · CapCut · Adobe Premiere Pro · Remotion</span></div><div class="tool-row"><b>Measure & improve</b><span>Meta insights · Google Analytics · Google Sheets · Excel PivotTables and charts</span></div><div class="tool-row"><b>Automate</b><span>n8n · REST APIs · JSON · AI-assisted research, writing, and production</span></div></div>
+          <div class="learning glass reveal"><h3>Education & certifications</h3><div class="learning-item"><b>B.A. Hospitality Management</b><span>University of Finance and Marketing · GPA 3.15 · 2018–2022</span></div><div class="learning-item"><b>Digital Performance</b><span>Tomorrow Marketers · 2025</span></div><div class="learning-item"><b>Google Digital Marketing & E-commerce</b><span>Coursera · 2025</span></div><div class="learning-item"><b>TOEIC 745</b><span>IIG Vietnam · 2022</span></div></div>
+        </div>
+      </section>
+
+      <section class="expertise" id="legacy-expertise" hidden aria-hidden="true">
         <div class="section-head reveal">
           <div><span class="kicker">What I bring</span><h2>One content brain.<br>Four working modes.</h2></div>
           <p>I combine audience thinking, editorial craft, visual execution, and lightweight automation—so ideas do not stop at a strategy deck.</p>
@@ -458,7 +712,7 @@
         </div>
       </section>
 
-      <section class="work" id="work">
+      <section class="work" id="legacy-work" hidden aria-hidden="true">
         <div class="section-head reveal">
           <div><span class="kicker">Selected work</span><h2>Built to be useful.<br>Measured to improve.</h2></div>
           <p>These projects show how I work across different audiences and formats—while keeping the same focus on clarity, consistency, and outcomes.</p>
@@ -695,7 +949,7 @@
         </div>
       </section>
 
-      <section class="experience" id="experience">
+      <section class="experience" id="legacy-experience" hidden aria-hidden="true">
         <div class="section-head reveal">
           <div><span class="kicker">Experience</span><h2>Work shaped by ownership.</h2></div>
           <p>From technical publishing to organic social growth, I am at my best when I can understand the problem, make the work, and learn from the result.</p>
@@ -707,7 +961,7 @@
         </div>
       </section>
 
-      <section class="systems" id="approach">
+      <section class="systems" id="legacy-approach" hidden aria-hidden="true">
         <div class="section-head reveal">
           <div><span class="kicker">How I work</span><h2>Creative work, with a system behind it.</h2></div>
           <p>I like clear briefs, useful evidence, and repeatable processes. The goal is not more content; it is content that earns attention and can improve over time.</p>
