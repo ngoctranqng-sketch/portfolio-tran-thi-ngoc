@@ -428,7 +428,7 @@
     .selected-video-section h5 { margin:0; font-size:22px; letter-spacing:-.025em; }
     .selected-video-intro { display:grid; grid-template-columns:.65fr 1.35fr; gap:22px; align-items:start; margin-bottom:18px; }
     .selected-video-intro p { margin:1px 0 0; color:var(--muted); font-size:12px; line-height:1.55; }
-    .selected-video-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+    .selected-video-grid { display:grid; grid-template-columns:repeat(2,minmax(0,240px)); gap:14px; justify-content:start; }
     .selected-video-card { min-width:0; aspect-ratio:9/16; overflow:hidden; border-radius:15px; border:1px solid var(--line); background:#111; }
     .selected-video-card iframe { display:block; width:100%; height:100%; border:0; }
     .selected-video-fallback { height:100%; padding:18px; display:flex; flex-direction:column; justify-content:space-between; color:#fff; text-decoration:none; background:linear-gradient(145deg,#6d58e8,#1b1730 72%); }
@@ -1141,10 +1141,8 @@
     ];
 
     const editedVideos = [
-      { url: 'https://www.facebook.com/reel/1197566378696230', embeddable: false },
-      { url: 'https://www.facebook.com/reel/1293521209453079', embeddable: false },
-      { url: 'https://www.facebook.com/reel/728229240261039', embeddable: true },
-      { url: 'https://www.facebook.com/reel/1027254290275869', embeddable: true }
+      { url: 'https://www.facebook.com/reel/728229240261039' },
+      { url: 'https://www.facebook.com/reel/1027254290275869' }
     ];
 
     const facebookPluginUrl = (item, showText = true, width = 500) => {
@@ -1184,9 +1182,7 @@
           <div class="selected-video-grid">
             ${editedVideos.map((video, index) => `
               <div class="selected-video-card">
-                ${video.embeddable
-                  ? `<iframe src="${facebookPluginUrl({ type: 'video', url: video.url }, false, 320)}" title="Selected vertical video edit ${index + 1}" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>`
-                  : `<a class="selected-video-fallback" href="${video.url}" target="_blank" rel="noopener" aria-label="Open selected vertical video edit ${index + 1} on Facebook"><span>Edited Reel · 0${index + 1}</span><i aria-hidden="true">▶</i><b>Watch the edited video on Facebook ↗</b></a>`}
+                <iframe src="${facebookPluginUrl({ type: 'video', url: video.url }, false, 320)}" title="Short-form video edited by Tran Thi Ngoc ${index + 1}" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             `).join('')}
           </div>
