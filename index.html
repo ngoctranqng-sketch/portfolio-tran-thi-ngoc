@@ -421,6 +421,12 @@
     .insight-frame a { display:block; }
     .insight-frame img { display:block; width:100%; height:auto; object-fit:contain; background:#f4f6fb; }
     .social-proof-row--video .insight-frame img { max-height:500px; }
+    @media (min-width:721px) {
+      .social-proof-row--video { align-items:stretch; }
+      .social-proof-row--video .social-proof-column { display:grid; grid-template-rows:36px minmax(0,1fr); }
+      .social-proof-row--video .facebook-embed-frame { position:relative; min-height:518px; }
+      .social-proof-row--video .facebook-embed-frame iframe { position:absolute; top:8px; left:8px; width:calc(100% - 16px); height:calc(100% - 16px); }
+    }
     .insight-copy { padding:15px 17px 17px; border-top:1px solid var(--line); }
     .insight-copy b { display:block; font-size:18px; letter-spacing:-.025em; }
     .insight-copy span { display:block; margin-top:4px; color:var(--muted); font-size:11px; }
