@@ -637,9 +637,9 @@
     /* Keep the gallery readable on phones that request a desktop-sized viewport. */
     @media (max-width: 720px), (max-width: 1200px) and (pointer: coarse) {
       .selected-video-section { min-width:0; }
-      .selected-video-grid { display:flex; width:100%; max-width:100%; gap:12px; overflow-x:auto; overscroll-behavior-x:contain; scroll-snap-type:x mandatory; scroll-padding-inline:1px; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+      .selected-video-grid { display:grid; grid-template-columns:none; grid-auto-flow:column; grid-auto-columns:78vw; justify-content:start; width:100%; max-width:100%; gap:12px; overflow-x:auto; overscroll-behavior-x:contain; scroll-snap-type:x mandatory; scroll-padding-inline:1px; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
       .selected-video-grid::-webkit-scrollbar { display:none; }
-      .selected-video-card { flex:0 0:78vw; max-width:none; scroll-snap-align:start; }
+      .selected-video-card { box-sizing:border-box; width:78vw; min-width:78vw; max-width:78vw; scroll-snap-align:start; }
       .selected-video-controls { display:flex; }
     }
 
