@@ -407,6 +407,10 @@
     .case-three li + li { margin-top:6px; }
     .result-strip { display:flex; flex-wrap:wrap; gap:7px; margin-top:23px; padding-top:20px; border-top:1px solid var(--line); }
     .result-strip span { padding:8px 10px; border-radius:9px; background:rgba(104,88,232,.08); color:#5047a3; font:500 10px/1 "DM Mono",monospace; }
+    .partnership-gallery { margin:0 40px 36px; padding-top:26px; border-top:1px solid var(--line); }
+    .partnership-gallery h5 { margin:0; font-size:22px; letter-spacing:-.025em; }
+    .partnership-gallery .project-gallery img { height:200px; object-fit:contain; background:#f4f6fb; }
+    @media (max-width:720px) { .partnership-gallery { margin:0 24px 24px; } .partnership-gallery .project-gallery img { height:170px; } }
     .project-gallery { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:20px; }
     .project-gallery img { width:100%; height:115px; object-fit:cover; border-radius:12px; border:1px solid rgba(255,255,255,.9); }
     .social-proof-list { display:grid; gap:24px; margin-top:26px; }
@@ -597,7 +601,6 @@
       </a>
       <button class="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
       <div class="nav-links">
-        <a href="#expertise">Capabilities</a>
         <a href="#experience">Experience</a>
         <a href="#work">Projects</a>
         <a href="#contact" class="nav-cta">Let's connect</a>
@@ -653,43 +656,6 @@
         </div>
       </section>
 
-      <section class="capabilities" id="expertise">
-        <div class="section-head reveal">
-          <div><span class="kicker">Capabilities</span><h2>Skills, proven<br>inside the work.</h2></div>
-          <p>Each capability below links directly to a result, output, or working process. The portfolio then shows the projects behind that evidence.</p>
-        </div>
-        <div class="cap-grid">
-          <article class="cap-card glass reveal">
-            <div class="cap-top"><span class="cap-icon">01</span><span class="label">Strategy & editorial</span></div>
-            <h3>Content strategy and technical storytelling</h3>
-            <p>Audience research, content pillars, editorial calendars, SEO briefs, bilingual writing, expert interviews, and turning unfamiliar subjects into clear narratives.</p>
-            <div class="tool-chips"><span>SEO</span><span>WordPress</span><span>Interviewing</span><span>EN/VN editing</span><span>Content planning</span></div>
-            <div class="cap-proof"><div><b>300+ articles</b><span>technical and SEO content</span></div><div><b>134% target</b><span>annual blog sessions</span></div></div>
-          </article>
-          <article class="cap-card glass reveal">
-            <div class="cap-top"><span class="cap-icon">02</span><span class="label">Social & video</span></div>
-            <h3>Organic social media and short-form production</h3>
-            <p>Research, scripts, captions, listing content, branded design, editing, publishing, and monthly optimization for Facebook and creator-led platforms.</p>
-            <div class="tool-chips"><span>Facebook</span><span>YouTube</span><span>CapCut</span><span>Premiere Pro</span><span>Canva</span></div>
-            <div class="cap-proof"><div><b>582.6K views</b><span>Ethan organic performance</span></div><div><b>114K views</b><span>Win educational video</span></div></div>
-          </article>
-          <article class="cap-card glass reveal">
-            <div class="cap-top"><span class="cap-icon">03</span><span class="label">Campaigns & stakeholders</span></div>
-            <h3>Integrated and partner communications</h3>
-            <p>Campaign copy, email and social distribution, event communications, executive speechwriting, expert approvals, and coordination with partner teams.</p>
-            <div class="tool-chips"><span>Campaign planning</span><span>Email</span><span>Partner review</span><span>Events</span><span>Speechwriting</span></div>
-            <div class="cap-proof"><div><b>60+ citations</b><span>IT Market Report</span></div><div><b>26 interviews</b></div></div>
-          </article>
-          <article class="cap-card glass reveal">
-            <div class="cap-top"><span class="cap-icon">04</span><span class="label">Operations & systems</span></div>
-            <h3>Content operations and practical automation</h3>
-            <p>Performance dashboards, QA checklists, reusable brand templates, listing-verification processes, API-based research, and AI-assisted video workflows.</p>
-            <div class="tool-chips"><span>Google Sheets</span><span>n8n</span><span>REST API</span><span>Remotion</span><span>AI-assisted workflows</span></div>
-            <div class="cap-proof"><div><b>~6 posts/week</b><span>repeatable operating rhythm</span></div><div><b>2 live systems</b><span>listing research and video</span></div></div>
-          </article>
-        </div>
-      </section>
-
       <section class="career" id="experience">
         <div class="section-head reveal">
           <div><span class="kicker">Work experience</span><h2>What I owned.<br>What changed.</h2></div>
@@ -720,7 +686,7 @@
 
       <section class="portfolio" id="work">
         <div class="section-head reveal">
-          <div><span class="kicker">Project portfolio</span><h2>Projects, connected<br>to the capabilities.</h2></div>
+          <div><span class="kicker">Project portfolio</span><h2>Selected work.<br>Visible impact.</h2></div>
           <p>Rather than listing campaign names, each case shows the business or audience problem, the work I personally handled, and the result or concrete output.</p>
         </div>
 
@@ -750,14 +716,13 @@
         <div class="chapter">
           <div class="chapter-head reveal"><span class="chapter-no">03</span><h3>Campaigns, events & partnerships</h3><p>Connecting briefs, stakeholders, channels, and on-site delivery.</p></div>
           <div class="case-stack">
-            <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side coral"><span class="case-type">Media partnerships</span><img class="case-cover contain" src="Partnership with NAB Vietnam at NAB Security Jam 2023.png" alt="Partner communication examples"><h4>Technology and career community partnerships</h4><span class="case-number">CASE 07</span></div><div class="case-main"><span class="case-role">Communication support · Channel-ready content</span><p class="case-intro">VietnamWorks inTECH acted as a media partner for selected programs led by employers, universities, academies, and developer communities. My role focused on communication support rather than owning the partner events.</p><div class="case-three"><div><h5>Selected partners</h5><p>NAB Security Jam, FPT Career Fair, BKACAD webinars, Google I/O Extended Hanoi, and LIKELION at KTech College Job Fair.</p></div><div><h5>What I contributed</h5><ul><li>Adapted partner briefs into social and email content</li><li>Coordinated reviews and publishing through inTECH channels</li><li>For NAB, wrote promotional content and an internal IT Director's event speech</li><li>Supported the VietnamWorks inTECH booth at KTech College Job Fair</li></ul></div><div><h5>Scope boundary</h5><p>The partner organizations owned event strategy and operations. I supported promotion and, at KTech, on-site booth activity.</p></div></div><div class="result-strip"><span>Media partnerships</span><span>Social + email</span><span>Partner approvals</span><span>KTech booth support</span></div></div></div></article>
+            <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side coral"><span class="case-type">Media partnerships</span><img class="case-cover contain" src="Partnership with NAB Vietnam at NAB Security Jam 2023.png" alt="Partner communication examples"><h4>Technology and career community partnerships</h4><span class="case-number">CASE 07</span></div><div class="case-main"><span class="case-role">Communication support · Channel-ready content</span><p class="case-intro">VietnamWorks inTECH acted as a media partner for selected programs led by employers, universities, academies, and developer communities. My role focused on communication support rather than owning the partner events.</p><div class="case-three"><div><h5>Selected partners</h5><p>NAB Security Jam, FPT Career Fair, BKACAD webinars, Google I/O Extended Hanoi, and LIKELION at KTech College Job Fair.</p></div><div><h5>What I contributed</h5><ul><li>Adapted partner briefs into social and email content</li><li>Coordinated reviews and publishing through inTECH channels</li><li>For NAB, wrote promotional content and an internal IT Director's event speech</li><li>Supported the VietnamWorks inTECH booth at KTech College Job Fair</li></ul></div><div><h5>Scope boundary</h5><p>The partner organizations owned event strategy and operations. I supported promotion and, at KTech, on-site booth activity.</p></div></div><div class="result-strip"><span>Media partnerships</span><span>Social + email</span><span>Partner approvals</span><span>KTech booth support</span></div></div></div><section class="partnership-gallery" aria-label="Media partnership communication examples"><h5>Selected communication outputs</h5><div class="project-gallery"><img src="Partnership with BKACAD for 2 webinar about IT industry in 2023 1.png" alt="BKACAD webinar communication" loading="lazy"><img src="Partnership with BKACAD for 2 webinar about IT industry in 2023 2.png" alt="BKACAD event creative" loading="lazy"><img src="Partnership with Google Developer Group Hanoi for 𝐆𝐨𝐨𝐠𝐥𝐞 𝐈:𝐎 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐇𝐚𝐧𝐨𝐢 𝟐𝟎𝟐𝟒!.png" alt="Google I/O Extended Hanoi communication" loading="lazy"><img src="Partnership with LikeLion at KTech College Job Fair 2024.png" alt="LIKELION at KTech College Job Fair" loading="lazy"></div></section></article>
 
             <div class="case-pair">
               <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side blue"><span class="case-type">Video podcast · Season 2</span><img class="case-cover" src="1-tach-codefee-main.png" alt="1 Tách Codefee video podcast"><h4>1 Tách Codefee</h4><span class="case-number">CASE 08</span></div><div class="case-main"><span class="case-role">Episode content support · IT Meet & Greet activation lead</span><p class="case-intro">The 12-episode, two-season podcast connected IT candidates with career stories and market topics. Season 2 introduced gated content and candidate-conversion objectives.</p><div class="case-three"><div><h5>Direct contribution</h5><ul><li>Researched and drafted interview questions for one Season 2 episode</li><li>Refined speaker responses and coordinated script finalization with the guest and host</li><li>Owned the related IT Meet & Greet communication, participant selection, confirmations, check-in, seating, Q&amp;A, gifts, and follow-up</li></ul></div><div><h5>Season 2 result</h5><p>The overall campaign delivered 169.59% of its views KPI and 528.64% of its CV applications KPI, supported by paid promotion of short-form podcast clips.</p></div></div><div class="result-strip"><span>169.59% views KPI</span><span>528.64% CV applications KPI</span><span>Paid + organic campaign</span></div></div></div></article>
               <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side light"><span class="case-type">VietnamWorks × Google × NIC</span><img class="case-cover" src="empowergrowthmain.jpeg" alt="Empower Growth 2023 campaign"><h4>Empower Growth 2023</h4><span class="case-number">CASE 09</span></div><div class="case-main"><span class="case-role">VietnamWorks inTECH communication support</span><p class="case-intro">The national initiative offered scholarships for six Google Career Certificate courses on Coursera and connected learners with career knowledge and employers. The central VietnamWorks Communications team owned the master campaign strategy.</p><div class="case-three"><div><h5>My scope</h5><ul><li>Executed communication materials for the July IT Career Talk</li><li>Developed copy and supporting visuals from the approved master plan</li><li>Adapted selected activities for inTECH channels and coordinated amplification with internal teams</li><li>Supported the team lead's communication with employers and Sales</li></ul></div><div><h5>Delivery</h5><p>Completed 100% of assigned communication materials on schedule.</p></div></div><div class="result-strip"><span>Execution support</span><span>July IT Career Talk</span><span>100% on-time delivery</span></div></div></div></article>
             </div>
 
-            <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side"><span class="case-type">Partnership evidence</span><h4>Selected communication outputs</h4><span class="case-number">GALLERY</span></div><div class="case-main"><span class="case-role">Promotional content · Media support · KTech booth support</span><p class="case-intro">A compact gallery of the partner programs summarized in Case 07. These were media partnerships; the partner organizations owned the events.</p><div class="project-gallery"><img src="Partnership with BKACAD for 2 webinar about IT industry in 2023 1.png" alt="BKACAD webinar communication" loading="lazy"><img src="Partnership with BKACAD for 2 webinar about IT industry in 2023 2.png" alt="BKACAD event creative" loading="lazy"><img src="Partnership with Google Developer Group Hanoi for 𝐆𝐨𝐨𝐠𝐥𝐞 𝐈:𝐎 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐇𝐚𝐧𝐨𝐢 𝟐𝟎𝟐𝟒!.png" alt="Google I/O Extended Hanoi communication" loading="lazy"><img src="Partnership with LikeLion at KTech College Job Fair 2024.png" alt="LIKELION at KTech College Job Fair" loading="lazy"></div></div></div></article>
           </div>
         </div>
 
