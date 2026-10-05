@@ -520,6 +520,26 @@
     .case-pair .work-case-grid { grid-template-columns:1fr; }
     .case-pair .case-side { min-height:220px; }
     .case-pair .case-three { grid-template-columns:1fr; }
+    .contribution-case { min-width:0; padding:24px; }
+    .contribution-case .partnership-header { margin:-24px -24px 24px; padding:24px; min-height:172px; }
+    .contribution-case .partnership-header h4 { font-size:clamp(26px,2.7vw,34px); }
+    .contribution-media { overflow:hidden; aspect-ratio:16/9; border:1px solid var(--line); border-radius:14px; background:#edf0f8; }
+    .contribution-media iframe,.contribution-media img { display:block; width:100%; height:100%; border:0; object-fit:contain; }
+    .contribution-caption { margin:10px 0 18px; color:var(--muted); font-size:11px; line-height:1.5; }
+    .contribution-caption a { color:var(--violet); text-decoration:none; }
+    .contribution-scope { margin-top:22px; }
+    .contribution-scope h5,.contribution-outputs h5 { margin:0 0 12px; color:var(--violet); font:500 10px/1.4 "DM Mono",monospace; letter-spacing:.07em; text-transform:uppercase; }
+    .contribution-scope ul { margin:0; padding-left:18px; color:var(--muted); font-size:12px; line-height:1.65; }
+    .contribution-scope li+li { margin-top:8px; }
+    .contribution-outputs { margin-top:24px; padding-top:20px; border-top:1px solid var(--line); }
+    .contribution-outputs a { position:relative; display:block; padding:13px 36px 13px 14px; border:1px solid var(--line); border-radius:11px; color:var(--ink); text-decoration:none; background:#fff; }
+    .contribution-outputs a+a { margin-top:9px; }
+    .contribution-outputs a:hover { border-color:var(--violet); }
+    .contribution-outputs span { display:block; color:var(--muted); font:500 9px/1.4 "DM Mono",monospace; text-transform:uppercase; }
+    .contribution-outputs b { display:block; margin-top:6px; font-size:12px; line-height:1.5; font-weight:600; }
+    .contribution-outputs i { position:absolute; top:50%; right:14px; color:var(--violet); font-style:normal; }
+    @media (max-width:720px) { .contribution-case { padding:20px; } .contribution-case .partnership-header { margin:-20px -20px 20px; padding:22px 20px; min-height:0; } }
+
 
     .credentials { padding-bottom:122px; }
     .credential-grid { display:grid; grid-template-columns:1.1fr .9fr; gap:16px; }
@@ -799,9 +819,42 @@
               <section class="partnership-gallery" aria-label="Media partnership communication examples"><h5>Selected communication outputs</h5><div class="partnership-images"><figure><a href="https://www.facebook.com/photo/?fbid=729917519166684&amp;set=a.613915734100197&amp;locale=vi_VN" target="_blank" rel="noopener" aria-label="View NAB Security Jam 2023 on Facebook"><img src="Partnership with NAB Vietnam at NAB Security Jam 2023.png" alt="Partner communication examples" loading="lazy"></a><figcaption>NAB Security Jam 2023</figcaption></figure><figure><a href="https://www.facebook.com/share/p/1AB6zfmrYs/" target="_blank" rel="noopener" aria-label="View WEBINAR: CƠ HỘI NGHỀ NGHIỆP NGÀNH GAME on Facebook"><img src="Partnership with BKACAD for 2 webinar about IT industry in 2023 1.png" alt="BKACAD webinar communication" loading="lazy"></a><figcaption>WEBINAR: CƠ HỘI NGHỀ NGHIỆP NGÀNH GAME</figcaption></figure><figure><a href="https://www.facebook.com/share/p/1CRWUScK45/" target="_blank" rel="noopener" aria-label="View WORKSHOP: KHÁM PHÁ SỨC MẠNH TRÍ TUỆ NHÂN TẠO on Facebook"><img src="Partnership with BKACAD for 2 webinar about IT industry in 2023 2.png" alt="BKACAD event creative" loading="lazy"></a><figcaption>WORKSHOP: KHÁM PHÁ SỨC MẠNH TRÍ TUỆ NHÂN TẠO</figcaption></figure><figure><a href="https://www.facebook.com/share/p/1Dbqord159/" target="_blank" rel="noopener" aria-label="View Google I/O Extended Hanoi 2024 on Facebook"><img src="Partnership with Google Developer Group Hanoi for 𝐆𝐨𝐨𝐠𝐥𝐞 𝐈:𝐎 𝐄𝐱𝐭𝐞𝐧𝐝𝐞𝐝 𝐇𝐚𝐧𝐨𝐢 𝟐𝟎𝟐𝟒!.png" alt="Google I/O Extended Hanoi 2024 communication" loading="lazy"></a><figcaption>Google I/O Extended Hanoi 2024</figcaption></figure><figure><a href="https://www.facebook.com/share/p/1DZhZEAGGp/" target="_blank" rel="noopener" aria-label="View KTech College Job Fair 2024 on Facebook"><img src="Partnership with LikeLion at KTech College Job Fair 2024.png" alt="LIKELION at KTech College Job Fair" loading="lazy"></a><figcaption>KTech College Job Fair 2024</figcaption></figure></div></section>
             </article>
 
-            <div class="case-pair">
-              <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side blue"><span class="case-type">Video podcast · Season 2</span><img class="case-cover" src="1-tach-codefee-main.png" alt="1 Tách Codefee video podcast"><h4>1 Tách Codefee</h4><span class="case-number">CASE 08</span></div><div class="case-main"><span class="case-role">Episode content support · IT Meet & Greet activation lead</span><p class="case-intro">The 12-episode, two-season podcast connected IT candidates with career stories and market topics. Season 2 introduced gated content and candidate-conversion objectives.</p><div class="case-three case-three--two"><div><h5>Direct contribution</h5><ul><li>Researched and drafted interview questions for one Season 2 episode</li><li>Refined speaker responses and coordinated script finalization with the guest and host</li><li>Owned the related IT Meet & Greet communication, participant selection, confirmations, check-in, seating, Q&amp;A, gifts, and follow-up</li></ul></div></div><div class="project-results"><div class="metric-highlights"><div class="metric-highlight"><b>169.59%</b><span>Views KPI achieved</span><small>Season 2 campaign</small></div><div class="metric-highlight"><b>528.64%</b><span>CV applications KPI achieved</span><small>Season 2 campaign</small></div></div><p class="metric-note">Overall campaign results · Paid + organic distribution, including paid promotion of short-form podcast clips.</p></div></div></div></article>
-              <article class="work-case glass reveal"><div class="work-case-grid"><div class="case-side light"><span class="case-type">VietnamWorks × Google × NIC</span><img class="case-cover" src="empowergrowthmain.jpeg" alt="Empower Growth 2023 campaign"><h4>Empower Growth 2023</h4><span class="case-number">CASE 09</span></div><div class="case-main"><span class="case-role">VietnamWorks inTECH communication support</span><p class="case-intro">The national initiative offered scholarships for six Google Career Certificate courses on Coursera and connected learners with career knowledge and employers. The central VietnamWorks Communications team owned the master campaign strategy.</p><div class="case-three case-three--two"><div><h5>My scope</h5><ul><li>Executed communication materials for the July IT Career Talk</li><li>Developed copy and supporting visuals from the approved master plan</li><li>Adapted selected activities for inTECH channels and coordinated amplification with internal teams</li><li>Supported the team lead's communication with employers and Sales</li></ul></div></div><div class="project-results"><div class="metric-highlights"><div class="metric-highlight"><b>100%</b><span>Assigned materials delivered on time</span><small>Communication execution</small></div></div></div></div></div></article>
+            <div id="campaign-contributions" class="case-pair">
+              <article id="case-08" class="work-case partnership-case editorial-case contribution-case glass reveal">
+                <header class="partnership-header">
+                  <div class="partnership-meta"><span>Video podcast · Season 2</span><span class="case-number">CASE 08</span></div>
+                  <h4>1 Tách Codefee</h4>
+                  <span class="case-role">Episode content support · IT Meet &amp; Greet activation lead</span>
+                </header>
+                <div class="contribution-media"><iframe src="https://www.youtube.com/embed/3Wsg7sg2oZ8" title="1 Tách Codefee episode supported by Tran Thi Ngoc" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+                <p class="contribution-caption">Selected episode · <a href="https://youtu.be/3Wsg7sg2oZ8" target="_blank" rel="noopener">Watch on YouTube ↗</a></p>
+                <p class="case-intro">The podcast connected IT candidates with career stories and industry perspectives. I contributed to one Season 2 episode and led the related IT Meet &amp; Greet activation.</p>
+                <div class="contribution-scope"><h5>My contribution</h5><ul>
+                  <li>Researched the topic and drafted interview questions for the selected episode</li>
+                  <li>Refined speaker responses and coordinated script finalization with the guest and host</li>
+                  <li>Managed IT Meet &amp; Greet communication, participant selection, confirmations, and on-site coordination through follow-up</li>
+                </ul></div>
+              </article>
+              <article id="case-09" class="work-case partnership-case editorial-case contribution-case glass reveal">
+                <header class="partnership-header">
+                  <div class="partnership-meta"><span>VietnamWorks × Google × NIC</span><span class="case-number">CASE 09</span></div>
+                  <h4>Empower Growth 2023</h4>
+                  <span class="case-role">Content &amp; communication execution · VietnamWorks inTECH</span>
+                </header>
+                <div class="contribution-media"><img src="empowergrowthmain.jpeg" alt="Empower Growth 2023 campaign artwork, shown in full" loading="lazy"></div>
+                <p class="contribution-caption">Campaign artwork · VietnamWorks × Google × NIC</p>
+                <p class="case-intro">The program combined Google Career Certificate scholarships with career activities. I executed assigned social and blog content within the wider team's communication plan.</p>
+                <div class="contribution-scope"><h5>My contribution</h5><ul>
+                  <li>Created content explaining course benefits and encouraging learners to complete their courses</li>
+                  <li>Produced Career Talk speaker introductions, event reminders, and recaps for social and blog channels</li>
+                  <li>Prepared Office Tour reminders, practical attendee information, agendas, and recaps</li>
+                </ul></div>
+                <section class="contribution-outputs" aria-label="Empower Growth selected communication outputs"><h5>Selected work</h5>
+                  <a href="https://www.facebook.com/vietnamworksintech/posts/pfbid0HFxYz3YVdndWs37TEbCRKVYQz9YxCqn24g5tvKo4G57Anwfavr7ZxWHGKiYJGuT2l" target="_blank" rel="noopener"><span>Facebook · Course awareness</span><b>Top 6 lý do bạn không nên bỏ qua Empower Growth 2023</b><i aria-hidden="true">↗</i></a>
+                  <a href="https://intech.vietnamworks.com/article/power-up-your-future-career-talk-2-hanh-trinh-tro-thanh-nhung-chien-binh-IT-tinh-nhue" target="_blank" rel="noopener"><span>Blog · Event introduction</span><b>Career Talk #2: Hành trình trở thành những chiến binh IT tinh nhuệ</b><i aria-hidden="true">↗</i></a>
+                  <a href="https://intech.vietnamworks.com/article/IT-fresher-co-the-thu-nhap-len-den-$1000-mot-thang" target="_blank" rel="noopener"><span>Blog · Event recap</span><b>IT Fresher có thể thu nhập lên đến $1,000 mỗi tháng</b><i aria-hidden="true">↗</i></a>
+                </section>
+              </article>
             </div>
 
           </div>
