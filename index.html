@@ -715,22 +715,21 @@
     @media (max-width:720px) { .intech-social-row > * { flex-basis:84%; } }
 
 
-    .career-journey { position:relative; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:14px; padding-top:28px; margin:0 0 30px; }
-    .career-journey::before { content:""; position:absolute; top:9px; left:0; right:0; height:2px; background:rgba(104,88,232,.22); }
-    .career-journey a { position:relative; display:flex; flex-direction:column; gap:8px; padding:18px 16px; border:1px solid var(--line); border-radius:16px; background:rgba(255,255,255,.72); text-decoration:none; transition:border-color .2s,background .2s; }
-    .career-journey a::before { content:""; position:absolute; width:10px; height:10px; top:-24px; left:16px; border-radius:50%; background:var(--violet); box-shadow:0 0 0 4px var(--bg); }
-    .career-journey a:hover,.career-journey a:focus-visible { border-color:var(--violet); background:#fff; }
-    .career-journey time { font:500 10px/1.5 "Be Vietnam Pro",sans-serif; color:var(--violet); }
-    .career-journey strong { font-size:14px; line-height:1.35; }
-    .career-journey span { font-size:12px; line-height:1.45; color:var(--muted); }
-    .career-journey small { font-size:10px; line-height:1.4; color:var(--violet); margin-top:auto; }
+    .career-journey { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:0; margin:0 0 36px; }
+    .career-journey a { position:relative; display:flex; flex-direction:column; padding:0 24px 8px 0; text-decoration:none; }
+    .career-journey a::before { content:""; position:absolute; top:39px; left:0; right:0; height:2px; background:rgba(104,88,232,.22); }
+    .career-journey a:last-child::before { right:28px; }
+    .career-journey time { position:relative; display:block; font:500 9px/1.6 "Be Vietnam Pro",sans-serif; letter-spacing:.035em; color:var(--violet); margin:0 0 44px; white-space:nowrap; }
+    .career-journey time::after { content:""; position:absolute; top:33px; left:0; width:14px; height:14px; border-radius:50%; background:var(--violet); box-shadow:0 0 0 5px var(--bg); }
+    .career-journey strong { font-size:15px; line-height:1.45; margin:0 0 8px; transition:color .2s; }
+    .career-journey span { font-size:12px; line-height:1.6; color:var(--muted); max-width:200px; }
+    .career-journey a:hover strong { color:var(--violet); }
     .career-result-note { margin:10px 0 0; font-size:10px; line-height:1.5; color:var(--muted); }
     #experience .career-card { scroll-margin-top:110px; }
-    @media (max-width:850px) {
-      .career-journey { grid-template-columns:minmax(0,1fr); gap:12px; padding:0 0 0 22px; }
-      .career-journey::before { top:0; bottom:0; left:4px; right:auto; width:2px; height:auto; }
-      .career-journey a { padding:14px 16px; gap:5px; }
-      .career-journey a::before { top:20px; left:-23px; }
+    #experience .career-mini { grid-template-columns:minmax(0,1fr); }
+    @media (max-width:700px) {
+      .career-journey { grid-template-columns:repeat(4,185px); overflow-x:auto; scroll-snap-type:x mandatory; padding:6px 5px 18px; overscroll-behavior-x:contain; }
+      .career-journey a { scroll-snap-align:start; padding-right:20px; }
     }
   </style>
 </head>
@@ -804,11 +803,10 @@
           <p>The two current real-estate roles are separate companies managed concurrently. Earlier experience at VietnamWorks inTECH established my technical-content and campaign foundation.</p>
         </div>
 <nav class="career-journey reveal" aria-label="Career timeline">
-<a href="#experience-hu-muoi-man"><time>2019—PRESENT</time><strong>Hủ Muối Mặn</strong><span>Content Creator &amp; Video Editor</span><small>Independent project</small></a>
 <a href="#experience-new-world"><time>JUN—SEP 2022</time><strong>New World Phu Quoc Resort</strong><span>Marketing Communication Intern</span></a>
 <a href="#experience-intech"><time>OCT 2022—APR 2025</time><strong>VietnamWorks inTECH</strong><span>Marketing Communication Executive</span></a>
-<a href="#experience-win"><time>AUG 2025—PRESENT</time><strong>Win Nguyen Group</strong><span>Content Creator</span><small>Concurrent part-time role</small></a>
-<a href="#experience-ethan"><time>MAR 2026—PRESENT</time><strong>Ethan Realty Group</strong><span>Content Creator</span><small>Concurrent part-time role</small></a>
+<a href="#experience-win"><time>AUG 2025—PRESENT</time><strong>Win Nguyen Group</strong><span>Content Creator</span></a>
+<a href="#experience-ethan"><time>MAR 2026—PRESENT</time><strong>Ethan Realty Group</strong><span>Content Creator</span></a>
 </nav>
         <div class="career-list">
           <article id="experience-ethan" class="career-card glass reveal">
@@ -828,7 +826,7 @@
 
           <div class="career-mini">
             <article id="experience-new-world" class="career-card glass reveal"><div class="career-header"><div><span class="career-company">New World Phu Quoc Resort</span><h3>Marketing Communication Intern</h3><span class="career-meta">Hospitality marketing</span></div><span class="career-period">JUN—SEP 2022</span></div><div class="career-body"><div><h4>Contribution</h4><ul><li>Supported Facebook and Instagram content and timely guest interactions.</li><li>Localized marketing materials from English into Vietnamese.</li><li>Assisted on-site events and local partnership activities.</li></ul></div></div></article>
-            <article id="experience-hu-muoi-man" class="career-card glass reveal"><div class="career-header"><div><span class="career-company">Hủ Muối Mặn · Independent project</span><h3>Content Creator & Video Editor</h3><span class="career-meta">Creator-led production · Zero paid advertising</span></div><span class="career-period">2019—PRESENT</span></div><div class="career-body"><div><h4>Contribution and result</h4><ul><li>Independently select songs, translate and localize lyrics, create synchronized subtitles, design thumbnails, edit videos, optimize metadata, and publish.</li><li>Built an organic audience of 44.1K subscribers and 69,259,005 views.</li><li>Produced a top-performing video with approximately 29 million views.</li></ul></div></div></article>
+            
           </div>
         </div>
       </section>
