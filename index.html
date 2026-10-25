@@ -804,6 +804,13 @@
     #approach .tool-icon-grid--data { grid-template-columns:repeat(2,minmax(0,1fr)); }
     #approach .tool-icon-grid--automation { grid-template-columns:repeat(3,minmax(0,1fr)); }
     #approach .tool-section-note { margin:12px 0 0; color:var(--muted); font-size:11px; line-height:1.65; }
+
+    #approach .tool-mark--brand { width:50px; height:42px; background:transparent; box-shadow:none; border-radius:0; color:inherit; }
+    #approach .tool-mark--brand img { display:block; width:40px; height:40px; object-fit:contain; }
+    #approach .tool-mark--pair { display:flex; width:72px; align-items:center; justify-content:center; gap:8px; }
+    #approach .tool-mark--pair img { width:30px; height:38px; }
+    #approach .tool-tile--skill { gap:9px; }
+    #approach .tool-kind { display:grid; place-items:center; height:42px; color:var(--muted); font-size:10px; letter-spacing:.06em; text-transform:uppercase; }
   </style>
 </head>
 <body>
@@ -1012,12 +1019,12 @@
             <div class="tool-section">
               <h4>Automation &amp; AI workflows</h4>
               <div class="tool-icon-grid tool-icon-grid--automation">
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#233750"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 19 8-15 8 15M8 13h8m-10 6h12"/></svg></span><b>Antigravity IDE</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#6858e8"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10l4 9-4 9H7l-4-9zM9 9l-3 3 3 3m6-6 3 3-3 3"/></svg></span><b>AI Skills</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#ff6f61"><svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="6" r="2"/><circle cx="19" cy="12" r="2"/><path d="m7 11 3-4m4 0 3 4"/></svg></span><b>n8n</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#6858e8">R</span><b>Remotion</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#3776ab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-14-2 16"/></svg></span><b>Python / FFmpeg</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#4285f4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18h12a4 4 0 0 0 1-7.9A7 7 0 0 0 5.4 9.8 4.2 4.2 0 0 0 6 18Z"/></svg></span><b>Google Cloud Console</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/antigravity.svg" alt="" width="40" height="40" loading="lazy"></span><b>Antigravity IDE</b></div>
+                <div class="tool-tile tool-tile--skill"><span class="tool-kind">Skill</span><b>AI Skills</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/n8n.svg" alt="" width="40" height="40" loading="lazy"></span><b>n8n</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/remotion.svg" alt="" width="40" height="40" loading="lazy"></span><b>Remotion</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand tool-mark--pair"><img src="assets/tools/python.svg" alt="" width="30" height="38" loading="lazy"><img src="assets/tools/ffmpeg.svg" alt="" width="30" height="38" loading="lazy"></span><b>Python / FFmpeg</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/google-cloud.svg" alt="" width="40" height="40" loading="lazy"></span><b>Google Cloud Console</b></div>
                 
               </div>
               <p class="tool-section-note">Configured and tested in Antigravity IDE, with AI-assisted scripting and human review before publishing. Google Cloud Console is used to configure the YouTube connection.</p>
@@ -1026,28 +1033,28 @@
             <div class="tool-section">
               <h4>Publish & channels</h4>
               <div class="tool-icon-grid">
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#21759b">W</span><b>WordPress</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#f3c52b;color:#181818">M</span><b>Mailchimp</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#1877f2">f</span><b>Facebook</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#ff0000"><svg viewBox="0 0 24 24"><path d="m9 7 8 5-8 5z" fill="currentColor" stroke="none"/></svg></span><b>YouTube</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#6858e8"><svg viewBox="0 0 24 24"><path d="M4 18V8m0 10h16M7 15l4-4 3 2 5-6"/></svg></span><b>SEO & UTM</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/wordpress.svg" alt="" width="40" height="40" loading="lazy"></span><b>WordPress</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/mailchimp.svg" alt="" width="40" height="40" loading="lazy"></span><b>Mailchimp</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/facebook.svg" alt="" width="40" height="40" loading="lazy"></span><b>Facebook</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/youtube.svg" alt="" width="40" height="40" loading="lazy"></span><b>YouTube</b></div>
+                <div class="tool-tile tool-tile--skill"><span class="tool-kind">Skill</span><b>SEO & UTM</b></div>
               </div>
             </div>
             <div class="tool-section">
               <h4>Creative production</h4>
               <div class="tool-icon-grid">
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#00c4cc">C</span><b>Canva</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#a259ff">F</span><b>Figma</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#001e36;color:#31a8ff">Ps</span><b>Photoshop</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#11131a">✕</span><b>CapCut</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#00005b;color:#9999ff">Pr</span><b>Premiere Pro</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/canva.svg" alt="" width="40" height="40" loading="lazy"></span><b>Canva</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/figma.svg" alt="" width="40" height="40" loading="lazy"></span><b>Figma</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/photoshop.svg" alt="" width="40" height="40" loading="lazy"></span><b>Photoshop</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/capcut.ico" alt="" width="40" height="40" loading="lazy"></span><b>CapCut</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/premiere-pro.svg" alt="" width="40" height="40" loading="lazy"></span><b>Premiere Pro</b></div>
               </div>
             </div>
             <div class="tool-section">
               <h4>Data & systems</h4>
               <div class="tool-icon-grid tool-icon-grid--data">
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#f29900"><svg viewBox="0 0 24 24"><path d="M5 19V9m7 10V4m7 15v-6"/></svg></span><b>Analytics</b></div>
-                <div class="tool-tile"><span class="tool-mark" style="--brand:#0f9d58"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM5 10h14M11 4v16"/></svg></span><b>Google Sheets</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/google-analytics.svg" alt="" width="40" height="40" loading="lazy"></span><b>Analytics</b></div>
+                <div class="tool-tile"><span class="tool-mark tool-mark--brand"><img src="assets/tools/google-sheets.png" alt="" width="40" height="40" loading="lazy"></span><b>Google Sheets</b></div>
                 
                 
                 
